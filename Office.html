@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Quiz</title>
+<style>
+body {
+background-color: black;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("code.jpg");
+color: white;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+
+
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>Are you Michael or Jim?</h1>
+</div>
+<form id="form1">
+<fieldset>
+<h2>On a Saturday what would you usually be doing?</h2>
+<label for="var_string"><input type="radio" name="variable" value="2" id="var_string" />Shopping with friends?.</label>
+<label for="var_join"><input type="radio" name="variable" value="4" id="var_join" />Hanging out with your significant other?</label>
+<label for="var_info"><input type="radio" name="variable" value="2" id="var_info" />Heavily drinking?</label>
+<label for="var_condition"><input type="radio" name="variable" value="2" id="var_condition"/>Searching for the love of your life?</label>
+
+<h2>What job would be ideal for you?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="2" id="sub_string"/>Customer service?</label>
+<label for="sub_join"><input type="radio" name="sub" value="2" id="sub_join"/>Accounting?</label>
+<label for="sub_info"><input type="radio" name="sub" value="4" id="sub_info" />Sales?</label>
+<label for="sub_condition"><input type="radio" name="sub" value="2" id="sub_condition" />Management?</label>
+
+<h2>What would be your roll in the Christmas party?</h2>
+<label for="cat_string"><input type="radio" name="con" value="2" id="cat_string" />Santa?</label>
+<label for="cat_join"><input type="radio" name="con" value="2" id="cat_join" />The drunk?</label>
+<label for="cat_info"><input type="radio" name="con" value="2" id="cat_info" />The party pooper?</label>
+<label for="cat_condition"><input type="radio" name="con" value="4" id="cat_condition" />The one trying to leave?</label>
+
+<h2>Your friends tell you that?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="4" id="if_string" />You take things too seriously?</label>
+<label for="if_join"><input type="radio" name="ifstate" value="2" id="if_join" />You can't stop joking?</label>
+<label for="if_info"><input type="radio" name="ifstate" value="2" id="if_info" />You laugh at everything?</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="2" id="if_condition" />You are the life of the party?</label>
+
+<h2>Your idea of a fun night?</h2>
+<label for="fun_string"><input type="radio" name="fun" value="4" id="fun_string" />Trivia night.</label>
+<label for="fun_join"><input type="radio" name="fun" value="2" id="fun_join" />Enjoying a drink with friends.</label>
+<label for="fun_info"><input type="radio" name="fun" value="2" id="fun_info" />Reading a good book.</label>
+<label for="fun_condition"><input type="radio" name="fun" value="2" id="fun_condition"/>Writing a story.</label>
+
+<h2>What is the most important type of friend?</h2>
+<label for="friend_string"><input type="radio" name="friend" value="2" id="friend_string"/>The one that lifts you up?</label>
+<label for="friend_join"><input type="radio" name="friend" value="2" id="friend_join"/>The dutiful supporter</label>
+<label for="friend_info"><input type="radio" name="friend" value="4" id="friend_info" />The one that tells you when youre wrong</label>
+<label for="friend_condition"><input type="radio" name="friend" value="2" id="friend_condition" />Management?</label>
+
+<h2>What is the greatest part of The Office?</h2>
+<label for="great_string"><input type="radio" name="great" value="2" id="great_string" />The pranks</label>
+<label for="great_join"><input type="radio" name="great" value="2" id="great_join" />The relationships</label>
+<label for="great_info"><input type="radio" name="great" value="2" id="great_info" />The simplicity of the plot</label>
+<label for="great_condition"><input type="radio" name="great" value="4" id="great_condition" />The family feeling</label>
+
+<h2>What is the best Office episode?</h2>
+<label for="best_string"><input type="radio" name="best" value="2" id="best_string" />Scott's Tots</label>
+<label for="best_join"><input type="radio" name="best" value="2" id="best_join" />Dwight and Angela's wedding</label>
+<label for="best_info"><input type="radio" name="best" value="4" id="best_info" />Niagra </label>
+<label for="best_condition"><input type="radio" name="best"  value="2" id="best_condition" /> The Dundies</label>
+
+<h2>What would you likely say?</h2>
+<label for="party_string"><input type="radio" name="party" value="4" id="party_string" />"It's happening. And when it happens, it's going to kick your ass"</label>
+<label for="party_join"><input type="radio" name="party" value="2" id="party_join" /> "That's what she said."</label>
+<label for="party_info"><input type="radio" name="party" value="2" id="party_info" />" I am fast. To give you a reference point I am somewhere between a sanke and a mongoose...And a panther"</label>
+<label for="party_condition"><input type="radio" name="party" value="2" id="party_condition" />"I wish there was a way to know youre in the good old days before you've actually left them."</label>
+
+<h2>Which is your favorite Character Duo?</h2>
+<label for="duo_string"><input type="radio" name="duo" value="2" id="duo_string" />Dwight/Angela</label>
+<label for="duo_join"><input type="radio" name="duo" value="2" id="duo_join" /> Phyllis/Stanley</label>
+<label for="duo_info"><input type="radio" name="duo" value="4" id="duo_info" />Jim/Pam</label>
+<label for="duo_condition"><input type="radio" name="duo"  value="2" id="duo_condition" />Michael/Andy</label>
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+    
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   cat = parseInt(document.querySelector('input[name = "cat"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	   fun = parseInt(document.querySelector('input[name = "fun"]:checked').value);
+	   friend= parseInt(document.querySelector('input[name = "party"]:checked').value);
+	   great = parseInt(document.querySelector('input[name = "what"]:checked').value);
+	   best = parseInt(document.querySelector('input[name = "what"]:checked').value);
+	   party = parseInt(document.querySelector('input[name = "what"]:checked').value);
+	   duo = parseInt(document.querySelector('input[name = "what"]:checked').value);
+
+
+	   result = variable + sub + cat + ifstate+ fun + friend+ great+ best+ party+ duo;
+	   
+	document.getElementById("grade").innerHTML = result;
+
+ grading = [
+	   {score:20-30,feedback:"Congratulations your Michael", image: "michael.jpg"},
+	   {score:30-40,feedback:"Congratulations your Jim", image: "jim.jpg"},
+	   ];
+	  
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" + grading[i].image + "' width='300'  />";
+	  }
+	  }
+
+
+document.getElementById("grade2").innerHTML = result2; 
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+
+</div>
+</body>
+</html>
+
